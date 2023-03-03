@@ -46,7 +46,7 @@ app.use((err, req, res, next) => {
   return res.status(errorStatus).send(errorMessage);
 });
 
-app.listen(PORT, () => {
+app.listen(() => {
   connect();
   console.log(`Server is running at ${process.env.ORIGIN}!!`);
 });
